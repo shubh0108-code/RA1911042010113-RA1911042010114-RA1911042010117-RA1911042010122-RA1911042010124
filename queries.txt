@@ -1,4 +1,10 @@
 //
+1.select contactid,lastname,contactowner from contacts having lastname as young and order by contactid:
+       SELECT contactid,lastname,contactowner
+       from contacts 
+       having lastname='Young'
+       ORDER BY CONTACTID
+       
 1.Sales Cycle Time(Age Tier)vs Sales Order Count:
 	SELECT AGETIER,COUNT(SALESORDERID),STATUS FROM sales_orders GROUP BY AGETIER,STATUS HAVING STATUS<>'Created';
 
